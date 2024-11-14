@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="pushbutton"/>
+        <attribute name="authors" value="mynam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-25 11:51:54 "/>
+        <attribute name="created" value="bXluYW07TVhERVZTOzIwMjQtMTAtMjU7IjExOjQyOjA1ICI7MjIwMQ=="/>
+        <attribute name="edited" value="bXluYW07TVhERVZTOzIwMjQtMTAtMjU7IjExOjUxOjU0ICI7MTsyMzEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LED, pushbutton" type="Integer" array="False" size=""/>
+            <declare name="pinmode1, pinmode2, ledstate, buttonstate" type="Boolean" array="False" size=""/>
+            <assign variable="ledstate" expression="FALSE"/>
+            <assign variable="buttonstate" expression="FALSE"/>
+            <output expression="&quot;A quale PIN vuoi attaccare il led?&quot;" newline="True"/>
+            <input variable="LED"/>
+            <output expression="&quot;Seleziona la modalit&#224; del PIN, seleziona TRUE per OUTPUT&quot;" newline="True"/>
+            <input variable="pinmode1"/>
+            <output expression="&quot;A quale PIN vuoi aattaccare il pushbutton?&quot;" newline="True"/>
+            <input variable="pushbutton"/>
+            <output expression="&quot;A quale modalit&#224; del PIN del pushbutton, seleziona TRUE per OUTPUT&quot;" newline="True"/>
+            <input variable="pinmode1"/>
+            <while expression="1==1">
+                <output expression="&quot;Digita TRUE se il pushbutton &#232; schiacciato&quot;" newline="True"/>
+                <input variable="buttonstate"/>
+                <if expression="buttonstate==TRUE">
+                    <then>
+                        <assign variable="ledstate" expression="TRUE"/>
+                        <output expression="ledstate" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="ledstate" expression="FALSE"/>
+                        <output expression="ledstate" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="blinkingled2"/>
+        <attribute name="authors" value="mynam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 10:07:30 "/>
+        <attribute name="created" value="bXluYW07TVhERVZTOzIwMjQtMTAtMjk7IjEwOjAxOjM0ICI7MjIwMQ=="/>
+        <attribute name="edited" value="bXluYW07TVhERVZTOzIwMjQtMTAtMjk7IjEwOjA3OjMwICI7MTsyMzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LED" type="Integer" array="False" size=""/>
+            <declare name="pinmode, ledstate" type="Boolean" array="False" size=""/>
+            <assign variable="ledstate" expression="false"/>
+            <output expression="&quot;Inserisci il pin dove attaccare il led&quot;" newline="True"/>
+            <input variable="LED"/>
+            <output expression="&quot;Digita TRUE per modalit&#224; INPUT o FALSE per l'OUTPUT&quot;" newline="True"/>
+            <input variable="pinmode"/>
+            <while expression="1==1">
+                <assign variable="ledstate" expression="true"/>
+                <output expression="ledstate" newline="True"/>
+                <assign variable="ledstate" expression="false"/>
+                <output expression="ledstate" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

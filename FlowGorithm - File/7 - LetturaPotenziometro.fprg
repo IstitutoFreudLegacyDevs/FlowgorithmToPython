@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="potbase"/>
+        <attribute name="authors" value="mynam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 10:33:03 "/>
+        <attribute name="created" value="bXluYW07TVhERVZTOzIwMjQtMTAtMjk7IjEwOjIxOjIyICI7MjIwMA=="/>
+        <attribute name="edited" value="bXluYW07TVhERVZTOzIwMjQtMTAtMjk7IjEwOjMzOjAzICI7MTsyMzEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="analogPIN" type="String" array="False" size=""/>
+            <declare name="livelli" type="Integer" array="False" size=""/>
+            <declare name="pinmode" type="Boolean" array="False" size=""/>
+            <output expression="&quot;A quale PIN vuoi attaccare il potenziometro&quot;" newline="True"/>
+            <input variable="analogPIN"/>
+            <output expression="&quot;Digita TRUE per modalit&#224; OUTPUT, FALSE per INPUT&quot;" newline="True"/>
+            <input variable="pinmode"/>
+            <while expression="1==1">
+                <output expression="&quot;Digita il numero dii livelli tra 10 e 1023&quot;" newline="True"/>
+                <input variable="livelli"/>
+                <output expression="&quot;La lettura del potenziometro &#232;:&quot;" newline="True"/>
+                <output expression="livelli" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
